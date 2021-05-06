@@ -1,4 +1,4 @@
-const API_KEY = process.env.A;
+const API_KEY = process.env.MY_API_KEY_DB;
 
 const fetchObject = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
