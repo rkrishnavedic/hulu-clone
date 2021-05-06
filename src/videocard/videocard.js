@@ -16,9 +16,8 @@ const VideoCard = ({movie})=>{
             <h2>{movie.title}</h2>
             <p className="videocard-stats">
                 <div>
-                {movie.media_type && `${movie.media_type}`}
+                {movie.media_type && `${movie.media_type}`} &ensp;
                 {movie.release_date || movie.first_air_date}
-                
                 </div>
                 <div>
                 <ThumbUpSharp/>

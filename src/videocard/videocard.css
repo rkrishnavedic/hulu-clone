@@ -1,20 +1,25 @@
 .videocard{
 
     color: whitesmoke;
-    width: 500px;
-    height: 400px;
+    width: 350px;
+    height: 300px;
     padding: 20px;
+}
+
+.videocard >p{
+    font-size: 11px;
 }
 
 
 .videocard:hover > .videocard-stats{
     display: inline;
     display: flex;
+    font-size: small;
 }
 
 .videocard >img{
-    width: 500px;
-    height: 300px;
+    width: 350px;
+    height: 210px;
     object-fit: contain;
 }
 
@@ -29,4 +34,5 @@
 
 .videocard >h2{
     padding-top: 10px;
+    font-size: 21px;
 }
