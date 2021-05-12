@@ -7,23 +7,23 @@ const base_url = "https://image.tmdb.org/t/p/original";
 
 const VideoCard = ({movie})=>{
 
-    //console.log(movie)
+    console.log(movie)
 
     return(
         <motion.div initial={{opacity:0}} animate={{opacity:1}} whileHover={{scale:1.09}} exit={{opacity:0}} className="videocard">
             <img src={`${base_url}${movie.backdrop_path || movie.poster_path}`} alt=''/>
             <p>{movie.overview?.length>=63? movie.overview.substring(0,60)+'...':movie.overview}</p>
             <h2>{movie.title}</h2>
-            <p className="videocard-stats">
-                <div>
+            <div className="videocard-stats">
+                <div className="videocard-stats-left">
                 {movie.media_type && `${movie.media_type}`} &ensp;
                 {movie.release_date || movie.first_air_date}
                 </div>
-                <div>
+                <div className="videocard-stats-right">
                 <ThumbUpSharp/>
-                {movie.vote_count}
+                <p>{movie.vote_count}</p>
                 </div>
-            </p>
+            </div>
         </motion.div>
     )
 }

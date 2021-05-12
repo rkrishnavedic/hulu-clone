@@ -12,9 +12,17 @@
 
 
 .videocard:hover > .videocard-stats{
-    display: inline;
     display: flex;
     font-size: small;
+    justify-content: space-between;
+}
+
+.videocard-stats-left{
+    display: flex;
+}
+
+.videocard-stats-right{
+    display: flex;
 }
 
 .videocard >img{
